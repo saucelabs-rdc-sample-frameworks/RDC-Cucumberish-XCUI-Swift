@@ -1,0 +1,8 @@
+.DS_Store
+LoanCalc.app.zip
+LoanCalc.sim.app.zip
+*.ipa
+*.xml
+LoanCalc.xcodeproj/xcuserdata/
+LoanCalc.xcodeproj/project.xcworkspace/
+Payload/
