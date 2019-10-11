@@ -4,6 +4,7 @@ Scenario: Calculate Loan Amount
  
     Given the app is running
     When I enter "15550" in "LoanAmount"
+    When I force memory warning
     Then I take a screenshot called "LoanAmount Entered"
     When I enter "2" in "Interest"
     When I enter "2" in "SalesTax"

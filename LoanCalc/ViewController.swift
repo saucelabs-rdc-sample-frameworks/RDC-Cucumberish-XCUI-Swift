@@ -49,29 +49,45 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.accessibilityActivate()
                 
         // Initialize view
         tfLoanAmount.delegate = self
         tfLoanAmount.becomeFirstResponder()
         tfLoanAmount.keyboardType = UIKeyboardType.decimalPad
+        tfLoanAmount.isAccessibilityElement = true
+        tfLoanAmount.accessibilityIdentifier = "LoanAmount"
 
         tfInterest.delegate = self
         tfInterest.keyboardType = UIKeyboardType.decimalPad
+        tfInterest.isAccessibilityElement = true
+        tfInterest.accessibilityIdentifier = "Interest"
         
         tfSalesTax.delegate = self
         tfSalesTax.keyboardType = UIKeyboardType.decimalPad
+        tfSalesTax.isAccessibilityElement = true
+        tfSalesTax.accessibilityIdentifier = "SalesTax"
 
         tfTerm.delegate = self
         tfTerm.keyboardType = UIKeyboardType.decimalPad
+        tfTerm.isAccessibilityElement = true
+        tfTerm.accessibilityIdentifier = "Term"
 
         tfDownPayment.delegate = self
         tfDownPayment.keyboardType = UIKeyboardType.decimalPad
+        tfDownPayment.isAccessibilityElement = true
+        tfDownPayment.accessibilityIdentifier = "DownPayment"
 
         tfTradeIn.delegate = self
         tfTradeIn.keyboardType = UIKeyboardType.decimalPad
+        tfLoanAmount.isAccessibilityElement = true
+        tfTradeIn.accessibilityIdentifier = "TradeIn"
 
         tfFees.delegate = self
         tfFees.keyboardType = UIKeyboardType.decimalPad
+        tfFees.isAccessibilityElement = true
+        tfFees.accessibilityIdentifier = "Fees"
     }
 
     func calcLoan()

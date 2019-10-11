@@ -45,11 +45,10 @@
                                     <constraint firstItem="xXu-Ub-1Vy" firstAttribute="centerX" secondItem="Kt7-dl-4DD" secondAttribute="centerX" id="zSB-mj-ZtV"/>
                                 </constraints>
                             </view>
-                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEu-g8-gIT">
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEu-g8-gIT">
                                 <rect key="frame" x="0.0" y="106" width="375" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-8D-hw9">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-8D-hw9">
                                         <rect key="frame" x="26.5" y="8" width="290" height="311"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-BW-Uly" userLabel="svLoanAmount">
@@ -57,6 +56,9 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myC-yX-20y">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="21"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <bool key="isElement" value="NO"/>
+                                                        </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="180" id="SSX-r2-12P"/>
                                                             <constraint firstAttribute="height" constant="21" id="m6g-RH-fFC"/>
@@ -254,7 +256,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kz-DT-Lyu" userLabel="lblMonthlyPayment">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kz-DT-Lyu" userLabel="MonthlyPayment">
                                                         <rect key="frame" x="190" y="0.0" width="100" height="21"/>
                                                         <accessibility key="accessibilityConfiguration" identifier="MonthlyPayment"/>
                                                         <constraints>
@@ -280,7 +282,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX0-bW-xk6" userLabel="lblTotalPayments">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX0-bW-xk6" userLabel="TotalPayments">
                                                         <rect key="frame" x="190" y="0.0" width="100" height="21"/>
                                                         <accessibility key="accessibilityConfiguration" identifier="TotalPayments"/>
                                                         <constraints>
@@ -306,7 +308,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKm-lS-uNQ" userLabel="lblTotalInterest">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKm-lS-uNQ" userLabel="TotalInterest">
                                                         <rect key="frame" x="190" y="0.0" width="100" height="21"/>
                                                         <accessibility key="accessibilityConfiguration" identifier="TotalInterest"/>
                                                         <constraints>
@@ -332,7 +334,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhC-fv-2AP">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhC-fv-2AP" userLabel="TotalLoanAmount">
                                                         <rect key="frame" x="190" y="0.0" width="100" height="21"/>
                                                         <accessibility key="accessibilityConfiguration" identifier="TotalLoanAmount"/>
                                                         <constraints>
@@ -348,16 +350,42 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="qtJ-8D-hw9" firstAttribute="leading" secondItem="VEu-g8-gIT" secondAttribute="leading" constant="26.5" id="Cvq-7B-KfO"/>
+                                    <constraint firstAttribute="bottom" secondItem="qtJ-8D-hw9" secondAttribute="bottom" constant="81" id="TEo-xh-oSw"/>
+                                    <constraint firstAttribute="trailing" secondItem="qtJ-8D-hw9" secondAttribute="trailing" constant="58.5" id="jg2-AI-Ma2"/>
+                                    <constraint firstItem="qtJ-8D-hw9" firstAttribute="top" secondItem="VEu-g8-gIT" secondAttribute="topMargin" id="zHU-Y5-uXf"/>
+                                </constraints>
                             </scrollView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bv4-FR-0Fk">
+                                <rect key="frame" x="0.0" y="514" width="375" height="153"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <accessibility key="accessibilityConfiguration" identifier="main_view3" label="main_view2">
+                        <accessibility key="accessibilityConfiguration" label="main_view2">
                             <bool key="isElement" value="NO"/>
                         </accessibility>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Kt7-dl-4DD" secondAttribute="trailing" id="1N4-bj-tN7"/>
+                            <constraint firstAttribute="trailing" secondItem="Bv4-FR-0Fk" secondAttribute="trailing" id="1uM-Iu-8TM"/>
+                            <constraint firstItem="Bv4-FR-0Fk" firstAttribute="top" secondItem="VEu-g8-gIT" secondAttribute="bottom" constant="8" id="1yo-2L-wIE"/>
+                            <constraint firstItem="Bv4-FR-0Fk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9hC-ad-MMQ"/>
                             <constraint firstItem="Kt7-dl-4DD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BFj-lq-6pJ"/>
+                            <constraint firstItem="VEu-g8-gIT" firstAttribute="trailing" secondItem="Kt7-dl-4DD" secondAttribute="trailing" id="BeQ-V2-dcx"/>
+                            <constraint firstItem="Bv4-FR-0Fk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pm7-xt-gqN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bv4-FR-0Fk" secondAttribute="bottom" id="aKA-ET-m4c"/>
                             <constraint firstItem="Kt7-dl-4DD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dhV-vH-yeq"/>
+                            <constraint firstItem="VEu-g8-gIT" firstAttribute="top" secondItem="Kt7-dl-4DD" secondAttribute="bottom" constant="46" id="dzg-di-P2m"/>
+                            <constraint firstItem="VEu-g8-gIT" firstAttribute="leading" secondItem="Kt7-dl-4DD" secondAttribute="leading" id="gSH-3v-9uD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bv4-FR-0Fk" secondAttribute="bottom" id="jFJ-r8-Dje"/>
+                            <constraint firstAttribute="trailing" secondItem="Bv4-FR-0Fk" secondAttribute="trailing" id="oPC-u1-3nO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VEu-g8-gIT" secondAttribute="bottom" constant="161" id="rY5-yJ-Zh5"/>
+                            <constraint firstItem="Bv4-FR-0Fk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zjr-LG-t9u"/>
                         </constraints>
                     </view>
                     <connections>
