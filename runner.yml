@@ -14,43 +14,26 @@ xmlFolder: ./reports
 # Define a list of devices on which the tests should be executed.
 devices:
 
-# Device 1 example: minimal configuration.
-# Only specify a DC (either EU or US).
-# - datacenter: EU
-
-# Device 2 example: Static Allocation.
-- datacenter: US
-  deviceNameQuery: iPhone XS Max
-  platformVersion: 13
+# Device 1
 
 - datacenter: US
   deviceNameQuery: iPhone XS
   platformVersion: 12
 
+# Device 2
 
-# # Device 3 example: Dynamic Allocation.
-# - datacenter: US
-#   # Specify a device name or regex for dynamic allocation: 'iPhone 5', 'iPad.*', etc.
-#   deviceNameQuery: iPhone 5
+- datacenter: US
+  deviceNameQuery: iPhone X
+  platformVersion: 12
 
-#   # Platform Version for a dynamic device query. f.ex '9' for all Devices
-#   # with major version 9 and arbitrary minor versions or '9.3.3' for a more
-#   # specific version.
-#   platformVersion: 11.4
+# Device 3
 
-  # Optional parameters, set to true to enable.
-  # phoneOnly: false
-  # tabletOnly: false
-  # privateDevicesOnly: false
+- datacenter: US
+  deviceNameQuery: iPhone 8
+  platformVersion: 11
 
-# Device 4 example: Running subset of tests.
-  # Data center to run tests in (either EU or US).
-# - datacenter: EU
-
-  # Provide a list of test cases or test classes. If you want to run all tests
-  # of a class provide only the class name and if you want to run a specific
-  # method of a class provide the class name and method name.
-# - testsToRun:
-#   - testClass: SampleTestCase
-#   - testClass: SampleTestCase2
-#     testMethod: testItWorks
+testsToRun:
+  - testClass: CCICalculateLoanAmount
+    testMethod: calculateLoanAmount
+  - testClass: CCIClearFields
+    testMethod: clearAllFields
