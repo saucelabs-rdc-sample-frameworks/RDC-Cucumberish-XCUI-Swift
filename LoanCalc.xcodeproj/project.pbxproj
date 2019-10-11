@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		41619F01E9E4E76AB928A8A1 /* Pods_LoanCalcUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EFCFD8CB86AB48D8C7502D /* Pods_LoanCalcUITests.framework */; };
 		A230EBBD233AAB6F00E9F783 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = A230EBBC233AAB6F00E9F783 /* Features */; };
-		A2EE8AC8233AAF7500119E84 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE8AC6233AAF7500119E84 /* CucumberishInitializer.swift */; };
+		A2D09FF62350FAAC0001446F /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D09FF52350FAAC0001446F /* CucumberishInitializer.swift */; };
 		A2EE8ACF233AB14600119E84 /* CucumberishLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EE8ACE233AB14600119E84 /* CucumberishLoader.m */; };
 		FEF9A2882107A970009F7EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A2872107A970009F7EF9 /* AppDelegate.swift */; };
 		FEF9A28A2107A970009F7EF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9A2892107A970009F7EF9 /* ViewController.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2D0CC70E71084826935BF8F7 /* Pods-LoanCalcUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanCalcUITests.release.xcconfig"; path = "Target Support Files/Pods-LoanCalcUITests/Pods-LoanCalcUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A230EBBC233AAB6F00E9F783 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
-		A2EE8AC6233AAF7500119E84 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CucumberishInitializer.swift; path = "../../WeatherCucumber-master/WeatherCucumberUITests/CucumberishInitializer.swift"; sourceTree = "<group>"; };
+		A2D09FF52350FAAC0001446F /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		A2EE8ACD233AB11300119E84 /* LoanCalcUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoanCalcUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A2EE8ACE233AB14600119E84 /* CucumberishLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CucumberishLoader.m; sourceTree = "<group>"; };
 		CF3B93562F85C4425DED3FC1 /* Pods-LoanCalcUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanCalcUITests.debug.xcconfig"; path = "Target Support Files/Pods-LoanCalcUITests/Pods-LoanCalcUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				A2EE8ACD233AB11300119E84 /* LoanCalcUITests-Bridging-Header.h */,
 				A230EBBC233AAB6F00E9F783 /* Features */,
 				FEF9A2A92107A970009F7EF9 /* Info.plist */,
-				A2EE8AC6233AAF7500119E84 /* CucumberishInitializer.swift */,
+				A2D09FF52350FAAC0001446F /* CucumberishInitializer.swift */,
 				A2EE8ACE233AB14600119E84 /* CucumberishLoader.m */,
 			);
 			path = LoanCalcUITests;
@@ -351,8 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2EE8AC8233AAF7500119E84 /* CucumberishInitializer.swift in Sources */,
 				A2EE8ACF233AB14600119E84 /* CucumberishLoader.m in Sources */,
+				A2D09FF62350FAAC0001446F /* CucumberishInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
