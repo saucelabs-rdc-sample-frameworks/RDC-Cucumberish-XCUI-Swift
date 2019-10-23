@@ -19,21 +19,21 @@ devices:
 - datacenter: US
   deviceNameQuery: iPhone XS
   platformVersion: 12
-
+  testsToRun:
+  - testClass: CCICalculateLoanAmount
+    testMethod: calculateLoanAmount
+    
 # Device 2
 
 - datacenter: US
   deviceNameQuery: iPhone X
   platformVersion: 12
-
+  testsToRun:
+  - testClass: CCIClearFields
+    testMethod: clearAllFields
+    
 # Device 3
 
 - datacenter: US
   deviceNameQuery: iPhone 8
   platformVersion: 11
-
-testsToRun:
-  - testClass: CCICalculateLoanAmount
-    testMethod: calculateLoanAmount
-  - testClass: CCIClearFields
-    testMethod: clearAllFields
