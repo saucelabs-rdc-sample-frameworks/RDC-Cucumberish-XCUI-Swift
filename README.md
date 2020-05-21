@@ -16,7 +16,9 @@
    * LoanCalc.app
    * LoanCalcTests.xctest
    * LoanCalcUITests.xctest
+   
    Right click on LoanCalc.app and choose `Show in Finder` to get the location of the build.
+   
    Copy `LoanCalc.app` and `LoanCalc-Runner.app` from that folder to your main directory containing your runner.
    
 6. Create a new folder called `Payload`, copy `LoanCalc.app` into it, compress it, and rename the zip `LoanCalc.ipa`. This is    the ipa you'll upload to Sauce Labs. Instructions at https://wiki.saucelabs.com/display/DOCS/Creating+a+Real+Device+Project
